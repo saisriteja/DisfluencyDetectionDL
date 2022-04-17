@@ -9,7 +9,7 @@ Softwares used:
 
 
 
-Complete Algorithm 
+# Complete Algorithm 
 ![image](https://user-images.githubusercontent.com/48018142/163709544-7e40bb40-1b57-42ee-90c9-70397f79e71e.JPG)
 
 
