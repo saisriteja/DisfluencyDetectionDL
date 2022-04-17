@@ -1,12 +1,26 @@
 # DisFluency Detection Using Deep Learning
 
 
+
+Softwares used:
+1.  Python 
+2.  Praat
+3.  TensorFlow
+
+
+
+Complete Algorithm 
+![image](https://user-images.githubusercontent.com/48018142/163709544-7e40bb40-1b57-42ee-90c9-70397f79e71e.JPG)
+
+
+
 ## Process of the Project
 
 1.  Build a website and connect it to the AWS to save the recorded data which we get live.
 2.  Data Analysis and Data Cleaning.
 3.  Data Agumentations and Speech Processing tricks for a better output.
 4.  Build a Deep Learning Model to Predict the disfluency in speech.
+5.  Praat Software to get meta data.
 
 
 
@@ -39,6 +53,10 @@ https://myprosody.herokuapp.com/
 # 4. Deep Learning Architecture
 The model consist of resnet blocks to observe patterns in spectrograms and predict output. The output can predict both the labels, since we have used multilabel classification using sigmoid at the end for each classifier.
 ![image](https://user-images.githubusercontent.com/48018142/163709308-5bcf16f9-f2b0-4eef-bee3-2151a9f492a4.png)
+
+
+# 5. Additional Data
+Certain audio clips contain no information and noise, for such data using a deep learning model is a waste of computation, so we use praat software to detect such things and help it to predict as long pauses. The algorithm is good enough to predict all the filler long pauses and is highly accurate.
 
 
 # Results
