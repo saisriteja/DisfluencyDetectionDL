@@ -19,6 +19,17 @@ https://myprosody.herokuapp.com/
 ![image](https://user-images.githubusercontent.com/48018142/163707254-5e810fcd-d281-41db-a81a-6bb1b35e72f7.png)
 
 
+### Data Analysis Part
+
+1.  The data we get is recorded from various devices and different browser extensions. So sampling rate is set accordingly for proper pre processing.
+2.  Human Pitch for Men(100- 120Hz) and Women(300Hz), so low frequency information is necessary and high frequency is discarded. To do this we used a low pass filter.
+3.  A window is 10 seconds is sampled so that we can send in limited features to detect disfluencies.
+4.  The Mel scale mimics how the human ear works, with research showing humans don't perceive frequencies on a linear scale. Humans are better at detecting differences at lower frequencies than at higher frequencies. So we have used mel spectrograms as an input.
+
+
+
+![image](https://user-images.githubusercontent.com/48018142/163707377-24d26e11-ce0a-4934-90fb-4d64911ea4af.JPG)
+
 
 
 
